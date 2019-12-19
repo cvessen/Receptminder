@@ -1,0 +1,227 @@
+ <!-- Eindopdracht Coen van Essen | Webontwikkeling | 16-12-2019 -->
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Receptminder</title>
+    <meta name="description" content="New and easy way to store recipes for future use">
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body>
+	<header>
+	<div>
+		<img id="LogoFull" src=img/LogoFull.jpg  width=250 height=167 alt=Receptminder>
+		
+		<nav>  
+					<ul>
+				<li><a href="Homepage.html">Home</a>
+				<li><a href="Vlaai.html">Vlaai</a>
+				<li><a href="stamppot.html">Stamppot</a>
+				<li><a href="Snelle_hap.html">Snelle hap</a>
+				<li><a href="Pasta.html">Pasta</a>
+				<li><a href="Formulier.html">Formulier</a>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	
+	<section class="Titel">
+		<strong>Formulier</strong>
+	</section>
+	
+	<div id="pageContent">
+		<main>
+		<p>Wil je een recept met ons delen? Geef hem hieronder door en we noteren hem graag voor je!</p>		
+  <form name='Recepten'>
+    	<label><b>Laten we eerst een titel voor je recept noteren. Geef het hieronder in</b></label>
+			<input type="text" name="TitleRecipe" id="TitleRecipe" value="" style="width:400px; height:20px;"><br>
+		<br>
+		<br>
+		<label><b>Kies een van de hoofdcategorieën:</b></label>
+			<select name="TypeRecipe" size="1">
+				<option value="">Kies</option>
+				<option value="Snelle Hap">Snelle Hap</option>
+				<option value="Hutspot">Hutspot</option>
+				<option value="Vlaai">Vlaai</option>
+				<option value="Pasta">Pasta</option>
+			</select>
+		<br>
+		<br>
+		<br>
+		<label>
+			<b>Hoe lang is de bereidingstijd?</b>
+		</label>
+			<input type="number" min="0" name="TimeRecipe" id="TimeRecipe" style="width:40px; height:10px;"> minuten
+			<br>
+			<br>			
+		<label><b>En welke ingredienten gebruik je?</b></label><br>
+		vul je ingredient in:<br>
+			<input type="text" name="ingredient1" id="ingredient1" style="width:200px; height:10px;">
+			<label>hoeveelheid:</label><input type="number" min="0" name="ingredienthoeveelheid1" style="width:40px; height:10px;">
+		<label>type:</label>
+			<select name="TypeIngredient1" size="1">
+				<option value="">Kies</option>
+				<option value="Gram">Gram</option>
+				<option value="Deciliter">Deciliter</option>
+				<option value="Stuks">stuks</option>
+			</select>
+		<br>
+		<br>
+		<input type="text" name="ingredient2" id="ingredient2" style="width:200px; height:10px;">
+			<label>hoeveelheid:</label><input type="number" min="0" name="ingredienthoeveelheid2" style="width:40px; height:10px;">
+		<label>type:</label>
+			<select name="TypeIngredient2" size="1">
+				<option value="">Kies</option>
+				<option value="Gram">Gram</option>
+				<option value="Deciliter">Deciliter</option>
+				<option value="Stuks">stuks</option>
+			</select>
+		<br>
+		<br>
+		<input type="text" name="ingredient3" id="ingredient3" style="width:200px; height:10px;">
+			<label>hoeveelheid:</label><input type="number" min="0" name="ingredienthoeveelheid3" style="width:40px; height:10px;">
+		<label>type:</label>
+			<select name="TypeIngredient3" size="1">
+				<option value="">Kies</option>
+				<option value="Gram">Gram</option>
+				<option value="Deciliter">Deciliter</option>
+				<option value="Stuks">stuks</option>
+			</select>
+		<br>
+		<br>
+		<input type="text" name="ingredient4" style="width:200px; height:10px;">
+			<label>hoeveelheid:</label><input type="number" min="0" name="ingredienthoeveelheid4" style="width:40px; height:10px;">
+		<label>type:</label>
+			<select name="TypeIngredient4" size="1">
+				<option value="">Kies</option>
+				<option value="Gram">Gram</option>
+				<option value="Deciliter">Deciliter</option>
+				<option value="Stuks">stuks</option>
+			</select>
+		<br>
+		<br>
+		<input type="text" name="ingredient5" style="width:200px; height:10px;">
+			<label>hoeveelheid:</label><input type="number" min="0" name="ingredienthoeveelheid5" style="width:40px; height:10px;">
+		<label>type:</label>
+			<select name="TypeIngredient5" size="1">
+				<option value="">Kies</option>
+				<option value="Gram">Gram</option>
+				<option value="Deciliter">Deciliter</option>
+				<option value="Stuks">stuks</option>
+			</select>
+		<br>
+		<br>
+			<input type="text" name="ingredient6" style="width:200px; height:10px;">
+			<label>hoeveelheid:</label><input type="number" min="0" name="ingredienthoeveelheid6" style="width:40px; height:10px;">
+		<label>type:</label>
+			<select name="TypeIngredient6" size="1">
+				<option value="">Kies</option>
+				<option value="Gram">Gram</option>
+				<option value="Deciliter">Deciliter</option>
+				<option value="Stuks">stuks</option>
+			</select>
+		<br>
+		<br>voer bereidingswijze in<br>
+		<textarea name="bereidingswijze" id="bereidingswijze" style="width:400px; height:200px;"></textarea>
+		<br>
+		<br>
+	<label>
+		<b>Wil je weten of je recept opgenomen wordt?
+		<br>Laat dan hier je e-mail adres achter</b>
+	</label>
+			<input type="email" name="Emailadres" id="Emailadres" value="" style="width:400px; height:20px;"><br>
+	  </form>
+<p>
+<input type="submit" onclick="ValideerEmail(); valideertitel(); valideerIngredient1(); valideerIngredient2(); valideerIngredient3(); valideerBereidingswijze(); showUserInput1(); return false">
+</p>
+
+<p>
+<svg height="150" width="600">
+  <rect width="600" height="200" style="fill:#31B404;stroke-width:3;stroke:rgb(0,0,0)" />
+  <text x="50" y="35" fill="white">Fijn dat je de moeite hebt</text> 
+  <text x="70" y="65" fill="white">genomen dit formulier in te vullen!</text>
+  <text x="90" y="95" fill="white">kom binnenkort eens terug voor meer</text>
+  <text x="110" y="125" fill="white">Recepten om te "reminden"!</text>
+</svg>
+</p>
+<p>
+	<canvas id="myCanvas" height="50" width="600">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+
+	<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+
+	// Create gradient
+		var grd = ctx.createRadialGradient(75,50,5,90,190,600);
+		grd.addColorStop(0,"green");
+		grd.addColorStop(1,"white");
+	// Fill with gradient
+		ctx.fillStyle = grd;
+		ctx.fillRect(10,10,580,580);
+	</script>
+</p>			
+		</main>
+		<aside>
+			<div>
+				<p id='displayTitlerecipe'></p>
+				<p id='displayTypeRecipe'></p>
+				<p id='displayTimeRecipe'></p>
+			</div>
+			<div>
+				<p id='displayTitle'></p>
+			
+				<table>
+					<tr>
+						<td><p id='displayingredient1'></p></td>
+						<td><p id='displayingredienthoeveelheid1'></p></td>
+						<td><p id='displayTypeIngredient1'></p></td>
+					</tr>
+					<tr>
+						<td><p id='displayingredient2'></p></td>
+						<td><p id='displayingredienthoeveelheid2'></p></td>
+						<td><p id='displayTypeIngredient2'></p></td>
+					</tr>
+					<tr>
+						<td><p id='displayingredient3'></p></td>
+						<td><p id='displayingredienthoeveelheid3'></p></td>
+						<td><p id='displayTypeIngredient3'></p></td>
+					</tr>
+					<tr>
+						<td><p id='displayingredient4'></p></td>
+						<td><p id='displayingredienthoeveelheid4'></p></td>
+						<td><p id='displayTypeIngredient4'></p></td>
+					</tr>
+					<tr>
+						<td><p id='displayingredient5'></p></td>
+						<td><p id='displayingredienthoeveelheid5'></p></td>
+						<td><p id='displayTypeIngredient5'></p></td>
+					</tr>
+					<tr>
+						<td><p id='displayingredient6'></p></td>
+						<td><p id='displayingredienthoeveelheid6'></p></td>
+						<td><p id='displayTypeIngredient6'></p></td>
+					</tr>
+				</table>			
+			</div>
+			<div>
+			<p id='displaybereidingswijze'></p>
+			</div>
+		</aside>
+	</div>
+	<footer>
+		<p><strong>Coen van Essen</strong></p>
+	</footer>
+
+<script src="myscript.js"></script>
+</body>
+
+</html>
